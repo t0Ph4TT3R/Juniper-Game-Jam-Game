@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bhqa4h2j4x42g"]
+
+[ext_resource type="PackedScene" uid="uid://cws13kgciqack" path="res://Scenes/player.tscn" id="1_k60i4"]
+
+[node name="Player1cam" type="Control" unique_id=1452378441]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1553777182]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 645.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2004158542]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="player" parent="SubViewportContainer/SubViewport" unique_id=533629131 instance=ExtResource("1_k60i4")]
+position = Vector2(575, 324)

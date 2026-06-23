@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bjllacevdwhxg"]
+
+[ext_resource type="Texture2D" uid="uid://cpm8musxwa23s" path="res://icon.svg" id="1_4rphk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4rphk"]
+radius = 123.0
+height = 246.0
+
+[node name="cloud" type="StaticBody2D" unique_id=495629210]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1794354747]
+z_index = 1
+scale = Vector2(1.0185591, 0.24922445)
+shape = SubResource("CapsuleShape2D_4rphk")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=190647233]
+position = Vector2(0, 0.5)
+scale = Vector2(1.9137033, 0.50001156)
+texture = ExtResource("1_4rphk")
